@@ -1,3 +1,11 @@
-body {
-  background: red;
+@import './global-styles';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+@import './components/navabar';
+
+@import './home.scss';
