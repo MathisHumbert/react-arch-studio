@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo-white.png';
 import { BsArrowRight } from 'react-icons/bs';
 
 const Footer = () => {

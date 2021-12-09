@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
 @import './global-styles';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
 }
 
-@import './components/navabar';
+// pages
+@import './pages/home';
 
-@import './home.scss';
+// components
+@import './components/navabar';
+@import './components/footer';

@@ -2,6 +2,10 @@ import React from 'react';
 import mobileImages from '../assets/home/mobile';
 import featuredImages from '../assets/portfolio/mobile';
 import { BsArrowRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+
+const darkLinerGradient = `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),`;
+const linearGradient = `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),`;
 
 const Home = () => {
   return (
@@ -16,17 +20,23 @@ const Home = () => {
 
 const HeaderImage = () => {
   return (
-    <section className="img-section">
-      <img src={mobileImages.paramour} alt="bg-img" />
-      <h1>Project Paramour</h1>
-      <p>
-        Project made for an art museum near Southwest London. Project Paramour
-        is a statement of bold, modern architecture.
-      </p>
-      <button className="button">
-        see our portfolio
-        <BsArrowRight className="button__arrow" />
-      </button>
+    <section
+      className="img-section"
+      style={{
+        backgroundImage: `${darkLinerGradient} url(${mobileImages.paramour})`,
+      }}
+    >
+      <div className="img-section__container">
+        <h1>Project Paramour</h1>
+        <p>
+          Project made for an art museum near Southwest London. Project Paramour
+          is a statement of bold, modern architecture.
+        </p>
+        <Link className="button" to="'/">
+          see our portfolio
+          <BsArrowRight className="button__arrow" />
+        </Link>
+      </div>
     </section>
   );
 };
@@ -34,7 +44,8 @@ const HeaderImage = () => {
 const WelcomeHome = () => {
   return (
     <section className="section-center">
-      <h2>Welcome to Arch Studio</h2>
+      <div className="section-center__border-top"></div>
+      <h2 className="section-center__title">Welcome to Arch Studio</h2>
       <div className="section-center__text-container">
         <p>
           We have a unique network and skillset to help bring your projects to
@@ -60,13 +71,19 @@ const WelcomeHome = () => {
 
 const MiddleImage = () => {
   return (
-    <section className="img-section">
-      <img src={mobileImages.smallTeam} alt="bg-img" />
-      <h1>Small teal big ideas</h1>
-      <button className="button">
-        about us
-        <BsArrowRight className="button__arrow" />
-      </button>
+    <section
+      className="img-section"
+      style={{
+        backgroundImage: `${darkLinerGradient} url(${mobileImages.smallTeam})`,
+      }}
+    >
+      <div className="img-section__container">
+        <h1>Small teal big ideas</h1>
+        <Link className="button" to="/">
+          about us
+          <BsArrowRight className="button__arrow" />
+        </Link>
+      </div>
     </section>
   );
 };
@@ -76,25 +93,37 @@ const Featured = () => {
     <section className="section-center">
       <h2>Featured</h2>
       <div className="section-center__image-container">
-        <article className="section-center__featured-image">
-          <img src={featuredImages.delSol} alt="featured-img" />
+        <article
+          className="section-center__featured-image"
+          style={{
+            backgroundImage: `${linearGradient} url(${featuredImages.delSol})`,
+          }}
+        >
           <h3>project del sol</h3>
-          <p>view all projects</p>
+          <Link to="/">view all projects</Link>
         </article>
-        <article className="section-center__featured-image">
-          <img src={featuredImages.image228b} alt="featured-img" />
+        <article
+          className="section-center__featured-image"
+          style={{
+            backgroundImage: `${linearGradient} url(${featuredImages.image228b})`,
+          }}
+        >
           <h3>228B tower</h3>
-          <p>view all projects</p>
+          <Link to="/">view all projects</Link>
         </article>
-        <article className="section-center__featured-image">
-          <img src={featuredImages.prot} alt="featured-img" />
+        <article
+          className="section-center__featured-image"
+          style={{
+            backgroundImage: `${linearGradient} url(${featuredImages.prot})`,
+          }}
+        >
           <h3>le prototype</h3>
-          <p>view all projects</p>
+          <Link to="/">view all projects</Link>
         </article>
-        <button className="button">
-          about us
+        <Link className="button" to="/">
+          see all
           <BsArrowRight className="button__arrow" />
-        </button>
+        </Link>
       </div>
     </section>
   );
