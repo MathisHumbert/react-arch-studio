@@ -12,8 +12,8 @@ const Footer = () => {
         </span>
         <div className="footer__links">
           <Link to="/portfolio">portfolio</Link>
-          <Link to="">about us</Link>
-          <Link to="">contact</Link>
+          <Link to="/about">about us</Link>
+          <Link to="/contact">contact</Link>
         </div>
         <button className="button">
           see our portfolio
