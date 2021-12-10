@@ -1,7 +1,7 @@
 .main-portfolio {
   width: calc(100% - 57px);
   margin: 0 auto;
-  padding: 68px 0;
+  padding-top: 68px;
 }
 
 .portfolio-container {
@@ -33,6 +33,10 @@
         rgba(0, 0, 0, 0.25) 100%
       );
       z-index: -1;
+    }
+
+    h3 {
+      color: $white;
     }
 
     p,

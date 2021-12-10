@@ -1,5 +1,6 @@
 import React from 'react';
 import mobileImages from '../assets/portfolio/mobile';
+import aboutImages from '../assets/about';
 
 export const portfolioData = [
   {
@@ -139,5 +140,38 @@ export const featuredData = [
     },
     title: 'Le Prototype',
     link: true,
+  },
+];
+
+export const aboutHeaderData = {
+  img: {
+    mobile: aboutImages.mobile,
+    tablet: aboutImages.tablet,
+    desktop: aboutImages.desktop,
+  },
+  title: 'Your team of professionals',
+  text: 'Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.',
+};
+
+export const aboutLeaderData = [
+  {
+    img: aboutImages.jake,
+    name: 'Jake Richards',
+    job: 'Chief Architect',
+  },
+  {
+    img: aboutImages.thompson,
+    name: 'Thompson Smith',
+    job: 'Head of Finance',
+  },
+  {
+    img: aboutImages.jackson,
+    name: 'Jackson Rourke',
+    job: 'Lead Designer',
+  },
+  {
+    img: aboutImages.maria,
+    name: 'Maria Simpson',
+    job: 'Senior Architect',
   },
 ];

@@ -10,23 +10,27 @@ h1 {
   font-size: 48px;
   letter-spacing: -1.2px;
   line-height: 48px;
+  color: $very-dark-blue;
 }
 
 h2 {
   font-size: 40px;
   letter-spacing: -1.43px;
   line-height: 48px;
+  color: $very-dark-blue;
 }
 
 h3 {
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
+  color: $very-dark-blue;
 }
 
 p {
   font-size: 15px;
   line-height: 25px;
+  color: #60636d;
 }
 
 a {
@@ -53,4 +57,16 @@ a {
   &__arrow {
     font-size: 24px;
   }
+}
+
+hr {
+  width: 65px;
+  height: 1px;
+  background: $light-grey;
+  margin-bottom: 67px;
+}
+
+.hr-section {
+  width: calc(100% - 57px);
+  margin: 72px auto;
 }

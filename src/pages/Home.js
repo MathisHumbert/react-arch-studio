@@ -69,7 +69,7 @@ const MiddleImage = () => {
       <div className="img-section__container">
         <img src={mobileImages.smallTeam} />
         <h1>Small teal big ideas</h1>
-        <Link className="button" to="/">
+        <Link className="button" to="/about">
           about us
           <BsArrowRight className="button__arrow" />
         </Link>
