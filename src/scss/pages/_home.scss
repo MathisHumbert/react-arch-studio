@@ -1,3 +1,4 @@
+// HeaderImage && MiddleImage
 .img-section {
   width: 100%;
   height: 560px;
@@ -69,31 +70,19 @@
     color: $very-dark-blue;
   }
 
-  &__image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  &__featured-image {
-    width: 100%;
-    height: 240px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 27px;
-
-    a {
-      color: rgba(255, 255, 255, 0.75);
-    }
-  }
-
   .button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+// Featured
+.featured-section {
+  width: calc(100% - 57px);
+  margin: 0 auto;
+  padding: 72px 0;
+
+  h2 {
+    margin-bottom: 60px;
   }
 }

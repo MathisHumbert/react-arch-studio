@@ -1,11 +1,9 @@
 import React from 'react';
+import PortfolioComponent from '../components/PortfolioComponent';
+import { featuredData } from '../utils/data';
 import mobileImages from '../assets/home/mobile';
-import featuredImages from '../assets/portfolio/mobile';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-
-const darkLinerGradient = `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),`;
-const linearGradient = `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%),`;
 
 const Home = () => {
   return (
@@ -82,40 +80,10 @@ const MiddleImage = () => {
 
 const Featured = () => {
   return (
-    <section className="section-center">
+    <section className="featured-section">
       <h2>Featured</h2>
-      <div className="section-center__image-container">
-        <article
-          className="section-center__featured-image"
-          style={{
-            backgroundImage: `${linearGradient} url(${featuredImages.delSol})`,
-          }}
-        >
-          <h3>project del sol</h3>
-          <Link to="/portfolio">view all projects</Link>
-        </article>
-        <article
-          className="section-center__featured-image"
-          style={{
-            backgroundImage: `${linearGradient} url(${featuredImages.image228b})`,
-          }}
-        >
-          <h3>228B tower</h3>
-          <Link to="/portfolio">view all projects</Link>
-        </article>
-        <article
-          className="section-center__featured-image"
-          style={{
-            backgroundImage: `${linearGradient} url(${featuredImages.prot})`,
-          }}
-        >
-          <h3>le prototype</h3>
-          <Link to="/portfolio">view all projects</Link>
-        </article>
-        <Link className="button" to="/">
-          see all
-          <BsArrowRight className="button__arrow" />
-        </Link>
+      <div className="portfolio-container">
+        <PortfolioComponent data={featuredData} />
       </div>
     </section>
   );

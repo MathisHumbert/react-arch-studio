@@ -111,3 +111,33 @@ export const portfolioData = [
     date: 'February 2008',
   },
 ];
+
+export const featuredData = [
+  {
+    img: {
+      mobile: mobileImages.delSol,
+      tablet: '',
+      desktop: '',
+    },
+    title: 'Project Del Sol',
+    link: true,
+  },
+  {
+    img: {
+      mobile: mobileImages.federal,
+      tablet: '',
+      desktop: '',
+    },
+    title: 'Federal II Tower',
+    link: true,
+  },
+  {
+    img: {
+      mobile: mobileImages.prot,
+      tablet: '',
+      desktop: '',
+    },
+    title: 'Le Prototype',
+    link: true,
+  },
+];
