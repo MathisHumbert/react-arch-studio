@@ -1,7 +1,6 @@
 import React from 'react';
 import { aboutLeaderData } from '../utils/data';
 import { BsLinkedin, BsTwitter } from 'react-icons/bs';
-console.log(aboutLeaderData);
 
 const LeadersInfo = () => {
   return (

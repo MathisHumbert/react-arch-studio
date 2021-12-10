@@ -1,6 +1,7 @@
 import React from 'react';
 import mobileImages from '../assets/portfolio/mobile';
 import aboutImages from '../assets/about';
+import contactImages from '../assets/contact';
 
 export const portfolioData = [
   {
@@ -175,3 +176,13 @@ export const aboutLeaderData = [
     job: 'Senior Architect',
   },
 ];
+
+export const contactHeaderData = {
+  img: {
+    mobile: contactImages.mobileHeader,
+    tablet: contactImages.tabletHeader,
+    desktop: contactImages.desktopHeader,
+  },
+  title: 'Tell us about your project',
+  text: 'We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!',
+};
