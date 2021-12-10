@@ -20,19 +20,15 @@ const Home = () => {
 
 const HeaderImage = () => {
   return (
-    <section
-      className="img-section"
-      style={{
-        backgroundImage: `${darkLinerGradient} url(${mobileImages.paramour})`,
-      }}
-    >
+    <section className="img-section">
       <div className="img-section__container">
+        <img src={mobileImages.paramour} />
         <h1>Project Paramour</h1>
         <p>
           Project made for an art museum near Southwest London. Project Paramour
           is a statement of bold, modern architecture.
         </p>
-        <Link className="button" to="'/">
+        <Link className="button" to="/portfolio">
           see our portfolio
           <BsArrowRight className="button__arrow" />
         </Link>
@@ -71,13 +67,9 @@ const WelcomeHome = () => {
 
 const MiddleImage = () => {
   return (
-    <section
-      className="img-section"
-      style={{
-        backgroundImage: `${darkLinerGradient} url(${mobileImages.smallTeam})`,
-      }}
-    >
+    <section className="img-section">
       <div className="img-section__container">
+        <img src={mobileImages.smallTeam} />
         <h1>Small teal big ideas</h1>
         <Link className="button" to="/">
           about us
@@ -100,7 +92,7 @@ const Featured = () => {
           }}
         >
           <h3>project del sol</h3>
-          <Link to="/">view all projects</Link>
+          <Link to="/portfolio">view all projects</Link>
         </article>
         <article
           className="section-center__featured-image"
@@ -109,7 +101,7 @@ const Featured = () => {
           }}
         >
           <h3>228B tower</h3>
-          <Link to="/">view all projects</Link>
+          <Link to="/portfolio">view all projects</Link>
         </article>
         <article
           className="section-center__featured-image"
@@ -118,7 +110,7 @@ const Featured = () => {
           }}
         >
           <h3>le prototype</h3>
-          <Link to="/">view all projects</Link>
+          <Link to="/portfolio">view all projects</Link>
         </article>
         <Link className="button" to="/">
           see all
