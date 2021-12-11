@@ -4,8 +4,10 @@ import { contactHeaderData } from '../utils/data';
 import { BsArrowRight } from 'react-icons/bs';
 import Leaflet from '../components/Leaflet';
 import Form from '../components/Form';
+import { useGlobalContext } from '../context';
 
 const Contact = () => {
+  const { setAtlanta, setDallas } = useGlobalContext();
   return (
     <main className="main-contact">
       <HeaderInfo {...contactHeaderData} />
@@ -21,7 +23,7 @@ const Contact = () => {
             <p>Address : Atlanta</p>
             <p>Phone : 123-456-3451</p>
           </div>
-          <span>
+          <span onClick={setAtlanta}>
             View on Map <BsArrowRight className="map-icon" />
           </span>
         </article>
@@ -32,7 +34,7 @@ const Contact = () => {
             <p>Address : Dallas</p>
             <p>Phone : 832-123-4321</p>
           </div>
-          <span>
+          <span onClick={setDallas}>
             View on Map <BsArrowRight className="map-icon" />
           </span>
         </article>

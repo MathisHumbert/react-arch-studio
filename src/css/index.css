@@ -400,6 +400,30 @@ hr {
   font-weight: 700;
 }
 
+.form__input_text.error, .form__input_textarea.error {
+  border-color: #df5656;
+}
+
+.form__input_text.error::-webkit-input-placeholder, .form__input_textarea.error::-webkit-input-placeholder {
+  color: #df5656;
+  opacity: 0.5;
+}
+
+.form__input_text.error:-ms-input-placeholder, .form__input_textarea.error:-ms-input-placeholder {
+  color: #df5656;
+  opacity: 0.5;
+}
+
+.form__input_text.error::-ms-input-placeholder, .form__input_textarea.error::-ms-input-placeholder {
+  color: #df5656;
+  opacity: 0.5;
+}
+
+.form__input_text.error::placeholder, .form__input_textarea.error::placeholder {
+  color: #df5656;
+  opacity: 0.5;
+}
+
 .form__input_text::-webkit-input-placeholder, .form__input_textarea::-webkit-input-placeholder {
   font-size: 20px;
   font-weight: 700;
@@ -426,7 +450,7 @@ hr {
 
 .form__input_text:focus, .form__input_textarea:focus {
   outline: none;
-  border-bottom: 4px solid #1b1d23;
+  border-bottom-width: 4px;
 }
 
 .form__input_text {
@@ -446,11 +470,31 @@ hr {
   height: 80px;
   background: #1b1d23;
   border: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
 }
 
 .form__submit .icon {
   font-size: 24px;
   color: #fff;
+}
+
+.form__submit:hover {
+  background: #60636d;
+}
+
+.form .input-container {
+  position: relative;
+}
+
+.form .error-msg {
+  font-size: 15px;
+  font-weight: 700;
+  color: #df5656;
+  position: absolute;
+  bottom: 8px;
+  right: 2rem;
 }
 
 .leaflet-container {
@@ -479,7 +523,7 @@ hr {
           align-items: center;
 }
 
-.nav__hamburger {
+.nav__hamburger, .nav__x {
   font-size: 24px;
   cursor: pointer;
 }
@@ -598,15 +642,16 @@ hr {
   background: rgba(0, 0, 0, 0.35);
   opacity: 0;
   z-index: -100;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.open-sidebar .sidebar {
+.open.sidebar {
   width: 343px;
 }
 
-.open-sidebar .sidebar-background {
+.open.sidebar-background {
   opacity: 1;
   z-index: 9;
 }

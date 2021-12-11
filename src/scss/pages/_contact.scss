@@ -45,19 +45,26 @@
     display: flex;
     font-size: 20px;
     font-weight: 700;
-  }
 
-  &__input_text::placeholder,
-  &__input_textarea::placeholder {
-    font-size: 20px;
-    font-weight: 700;
-    color: $light-grey;
-  }
+    &.error {
+      border-color: $red;
+    }
 
-  &__input_text:focus,
-  &__input_textarea:focus {
-    outline: none;
-    border-bottom: 4px solid $very-dark-blue;
+    &.error::placeholder {
+      color: $red;
+      opacity: 0.5;
+    }
+
+    &::placeholder {
+      font-size: 20px;
+      font-weight: 700;
+      color: $light-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-width: 4px;
+    }
   }
 
   &__input_text {
@@ -77,10 +84,30 @@
     height: 80px;
     background: $very-dark-blue;
     border: 0;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+
     .icon {
       font-size: 24px;
       color: #fff;
     }
+
+    &:hover {
+      background: $dark-grey;
+    }
+  }
+
+  .input-container {
+    position: relative;
+  }
+
+  .error-msg {
+    font-size: 15px;
+    font-weight: 700;
+    color: $red;
+    position: absolute;
+    bottom: 8px;
+    right: 2rem;
   }
 }
 
