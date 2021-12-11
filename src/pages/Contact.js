@@ -18,7 +18,7 @@ const Contact = () => {
           <p>Main Office</p>
           <div className="contact-section__text">
             <p>Mail : archone@mail.com</p>
-            <p>Address : 1892 Chenoweth Drive TN</p>
+            <p>Address : Atlanta</p>
             <p>Phone : 123-456-3451</p>
           </div>
           <span>
@@ -29,7 +29,7 @@ const Contact = () => {
           <p>Office II</p>
           <div className="contact-section__text">
             <p>Mail : archtwo@mail.com</p>
-            <p>Address : 3399 Wines Lane TX</p>
+            <p>Address : Dallas</p>
             <p>Phone : 832-123-4321</p>
           </div>
           <span>

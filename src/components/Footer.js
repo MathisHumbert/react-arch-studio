@@ -15,10 +15,10 @@ const Footer = () => {
           <Link to="/about">about us</Link>
           <Link to="/contact">contact</Link>
         </div>
-        <button className="button">
+        <Link to="/portfolio" className="button">
           see our portfolio
           <BsArrowRight className="button__arrow" />
-        </button>
+        </Link>
       </div>
     </footer>
   );
