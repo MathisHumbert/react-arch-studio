@@ -2,8 +2,9 @@ import React from 'react';
 import HeaderInfo from '../components/HeaderInfo';
 import { contactHeaderData } from '../utils/data';
 import { BsArrowRight } from 'react-icons/bs';
+import Leaflet from '../components/Leaflet';
+import Form from '../components/Form';
 
-console.log(contactHeaderData);
 const Contact = () => {
   return (
     <main className="main-contact">
@@ -21,7 +22,7 @@ const Contact = () => {
             <p>Phone : 123-456-3451</p>
           </div>
           <span>
-            View on Map <BsArrowRight />
+            View on Map <BsArrowRight className="map-icon" />
           </span>
         </article>
         <article className="contact-section__office">
@@ -32,10 +33,12 @@ const Contact = () => {
             <p>Phone : 832-123-4321</p>
           </div>
           <span>
-            View on Map <BsArrowRight />
+            View on Map <BsArrowRight className="map-icon" />
           </span>
         </article>
       </section>
+      <Leaflet />
+      <Form />
     </main>
   );
 };
