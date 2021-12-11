@@ -2,6 +2,7 @@ import React from 'react';
 import PortfolioComponent from '../components/PortfolioComponent';
 import { featuredData } from '../utils/data';
 import mobileImages from '../assets/home/mobile';
+import tabletImages from '../assets/home/tablet';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +21,8 @@ const HeaderImage = () => {
   return (
     <section className="img-section">
       <div className="img-section__container">
-        <img src={mobileImages.paramour} />
+        <img src={mobileImages.paramour} className="mobile-img" />
+        <img src={tabletImages.paramour} className="tablet-img" />
         <h1>Project Paramour</h1>
         <p>
           Project made for an art museum near Southwest London. Project Paramour
@@ -38,7 +40,7 @@ const HeaderImage = () => {
 const WelcomeHome = () => {
   return (
     <section className="section-center">
-      <div className="section-center__border-top"></div>
+      <hr />
       <h2 className="section-center__title">Welcome to Arch Studio</h2>
       <div className="section-center__text-container">
         <p>
@@ -67,8 +69,9 @@ const MiddleImage = () => {
   return (
     <section className="img-section">
       <div className="img-section__container">
-        <img src={mobileImages.smallTeam} />
-        <h1>Small teal big ideas</h1>
+        <img src={mobileImages.smallTeam} className="mobile-img" />
+        <img src={tabletImages.smallTeam} className="tablet-img" />
+        <h1>Small team, big ideas</h1>
         <Link className="button" to="/about">
           about us
           <BsArrowRight className="button__arrow" />

@@ -4,12 +4,14 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+
   const [zoom, setZoom] = useState(5);
   const [position, setPosition] = useState([35.15, -90]);
 
@@ -19,7 +21,7 @@ const AppProvider = ({ children }) => {
 
   const handleWindowWidth = () => {
     const width = window.innerWidth;
-    if (width >= 678) {
+    if (width >= 768) {
       document.body.style.overflow = 'unset';
       setIsSidebarOpen(false);
     }

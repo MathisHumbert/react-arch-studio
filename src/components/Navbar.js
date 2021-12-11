@@ -18,6 +18,17 @@ const Navbar = () => {
         ) : (
           <GiHamburgerMenu className="nav__hamburger" onClick={openSidebar} />
         )}
+        <ul className="nav__links">
+          <li className="nav__link">
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li className="nav__link">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="nav__link">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

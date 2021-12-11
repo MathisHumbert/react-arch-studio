@@ -26,8 +26,6 @@ const Leaflet = () => {
   const atlanta = [33.75, -84.38];
   const dallas = [32.78, -96.8];
 
-  console.log(zoom);
-
   return (
     <>
       <MapContainer

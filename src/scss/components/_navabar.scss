@@ -17,4 +17,43 @@
     font-size: 24px;
     cursor: pointer;
   }
+
+  &__links {
+    display: none;
+  }
+}
+
+@include tabletScreen {
+  .nav {
+    height: 152px;
+    width: calc(100% - 195px);
+    margin: 0 auto;
+
+    &__center {
+      width: 491px;
+      margin: 0;
+      height: 100%;
+    }
+
+    &__hamburger,
+    &__x {
+      display: none;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+    }
+
+    &__link {
+      list-style-type: none;
+
+      a {
+        font-size: 15px;
+        color: $medium-grey;
+        font-weight: 700;
+      }
+    }
+  }
 }

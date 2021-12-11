@@ -48,6 +48,7 @@ const Form = () => {
             placeholder="Message"
             value={message}
             onChange={handleMessage}
+            style={{ resize: 'none' }}
           ></textarea>
           {messageError && <span className="error-msg">Can't be empty</span>}
         </div>
