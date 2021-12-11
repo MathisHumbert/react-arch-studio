@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+.big {
+  display: none;
+}
+
 h1 {
   font-size: 48px;
   letter-spacing: -1.2px;
@@ -92,9 +96,21 @@ hr {
   .desktoo-img {
     display: none;
   }
+  .big {
+    display: block;
+    font-size: 120px;
+    line-height: 200px;
+    letter-spacing: 3px;
+    color: #eeeff4;
+  }
   h1 {
     font-size: 80px;
     line-height: 80px;
+    letter-spacing: -2px;
+  }
+  h2 {
+    font-size: 56px;
+    line-height: 56px;
     letter-spacing: -2px;
   }
 }
@@ -160,43 +176,9 @@ hr {
   z-index: -2;
 }
 
-@media screen and (min-width: 768px) {
-  .img-section {
-    width: calc(100% - 195px);
-    height: 720px;
-    margin: 0 auto;
-    padding: 58px;
-  }
-  .img-section p {
-    color: #fff;
-  }
-  .img-section .button {
-    margin-top: 2rem;
-  }
-  .img-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    z-index: -2;
-  }
-}
-
 .section-center {
   padding: 72px 27px;
   position: relative;
-}
-
-.section-center__border-top {
-  position: absolute;
-  top: 72px;
-  left: 27px;
-  width: 65px;
-  height: 1px;
-  background: #c8ccd8;
 }
 
 .section-center h2 {
@@ -225,6 +207,38 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .img-section {
+    width: calc(100% - 195px);
+    height: 720px;
+    margin: 0 auto;
+    padding: 58px;
+  }
+  .section-center {
+    padding: 72px 0;
+    width: calc(100% - 195px);
+    margin: 0 auto;
+  }
+  .section-center hr {
+    display: none;
+  }
+  .section-center__border-top {
+    position: absolute;
+    top: 72px;
+    left: 27px;
+    width: 65px;
+    height: 1px;
+    background: #c8ccd8;
+  }
+  .section-center h2 {
+    margin-bottom: 40px;
+  }
+  .section-center__title {
+    margin-top: -20px;
+    max-width: 400px;
+  }
 }
 
 .featured-section {

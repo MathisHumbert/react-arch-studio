@@ -41,6 +41,7 @@ const WelcomeHome = () => {
   return (
     <section className="section-center">
       <hr />
+      <h1 className="big">Welcome</h1>
       <h2 className="section-center__title">Welcome to Arch Studio</h2>
       <div className="section-center__text-container">
         <p>
