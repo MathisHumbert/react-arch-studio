@@ -1,4 +1,4 @@
-const mobilePortfolioImages = {
+const tabletPortfolioImages = {
   image228b: require('./image-228b.jpg').default,
   delSol: require('./image-del-sol.jpg').default,
   edelweiss: require('./image-edelweiss.jpg').default,
@@ -13,4 +13,4 @@ const mobilePortfolioImages = {
   trinity: require('./image-trinity.jpg').default,
 };
 
-export default mobilePortfolioImages;
+export default tabletPortfolioImages;

@@ -1,13 +1,14 @@
 import React from 'react';
-import mobileImages from '../assets/portfolio/mobile';
+import mobilePortfolioImages from '../assets/portfolio/mobile';
+import tabletPortfolioImages from '../assets/portfolio/tablet';
 import aboutImages from '../assets/about';
 import contactImages from '../assets/contact';
 
 export const portfolioData = [
   {
     img: {
-      mobile: mobileImages.seraph,
-      tablet: '',
+      mobile: mobilePortfolioImages.seraph,
+      tablet: tabletPortfolioImages.seraph,
       desktop: '',
     },
     title: 'Seraph Station',
@@ -15,8 +16,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.eebox,
-      tablet: '',
+      mobile: mobilePortfolioImages.eebox,
+      tablet: tabletPortfolioImages.eebox,
       desktop: '',
     },
     title: 'Eebox Building',
@@ -24,8 +25,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.federal,
-      tablet: '',
+      mobile: mobilePortfolioImages.federal,
+      tablet: tabletPortfolioImages.federal,
       desktop: '',
     },
     title: 'Federal II Tower',
@@ -33,8 +34,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.delSol,
-      tablet: '',
+      mobile: mobilePortfolioImages.delSol,
+      tablet: tabletPortfolioImages.delSol,
       desktop: '',
     },
     title: 'Project Del Sol',
@@ -42,8 +43,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.prot,
-      tablet: '',
+      mobile: mobilePortfolioImages.prot,
+      tablet: tabletPortfolioImages.prot,
       desktop: '',
     },
     title: 'Le Prototype',
@@ -51,8 +52,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.image228b,
-      tablet: '',
+      mobile: mobilePortfolioImages.image228b,
+      tablet: tabletPortfolioImages.image228b,
       desktop: '',
     },
     title: '228B Tower',
@@ -60,8 +61,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.edelweiss,
-      tablet: '',
+      mobile: mobilePortfolioImages.edelweiss,
+      tablet: tabletPortfolioImages.edelweiss,
       desktop: '',
     },
     title: 'Grand Edelweiss Hotel',
@@ -69,8 +70,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.netcry,
-      tablet: '',
+      mobile: mobilePortfolioImages.netcry,
+      tablet: tabletPortfolioImages.netcry,
       desktop: '',
     },
     title: 'Netcry Tower',
@@ -78,8 +79,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.hypers,
-      tablet: '',
+      mobile: mobilePortfolioImages.hypers,
+      tablet: tabletPortfolioImages.hypers,
       desktop: '',
     },
     title: 'Hypers',
@@ -87,8 +88,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.sxiv,
-      tablet: '',
+      mobile: mobilePortfolioImages.sxiv,
+      tablet: tabletPortfolioImages.sxiv,
       desktop: '',
     },
     title: 'SXIV Tower',
@@ -96,8 +97,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.trinity,
-      tablet: '',
+      mobile: mobilePortfolioImages.trinity,
+      tablet: tabletPortfolioImages.trinity,
       desktop: '',
     },
     title: 'Trinity Bank Tower',
@@ -105,8 +106,8 @@ export const portfolioData = [
   },
   {
     img: {
-      mobile: mobileImages.paramour,
-      tablet: '',
+      mobile: mobilePortfolioImages.paramour,
+      tablet: tabletPortfolioImages.paramour,
       desktop: '',
     },
     title: 'Project Paramour',
@@ -117,8 +118,8 @@ export const portfolioData = [
 export const featuredData = [
   {
     img: {
-      mobile: mobileImages.delSol,
-      tablet: '',
+      mobile: mobilePortfolioImages.delSol,
+      tablet: tabletPortfolioImages.delSol,
       desktop: '',
     },
     title: 'Project Del Sol',
@@ -126,8 +127,8 @@ export const featuredData = [
   },
   {
     img: {
-      mobile: mobileImages.federal,
-      tablet: '',
+      mobile: mobilePortfolioImages.federal,
+      tablet: tabletPortfolioImages.federal,
       desktop: '',
     },
     title: 'Federal II Tower',
@@ -135,8 +136,8 @@ export const featuredData = [
   },
   {
     img: {
-      mobile: mobileImages.prot,
-      tablet: '',
+      mobile: mobilePortfolioImages.prot,
+      tablet: tabletPortfolioImages.prot,
       desktop: '',
     },
     title: 'Le Prototype',
