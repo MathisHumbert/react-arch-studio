@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 const MiddleImage = () => {
   return (
-    <section className="img-section">
-      <div className="img-section__container">
+    <section className="img-section middle-image">
+      <div className="img-section__container ">
         <img src={mobileImages.smallTeam} className="mobile-img" />
         <img src={tabletImages.smallTeam} className="tablet-img" />
         <h1>Small team, big ideas</h1>

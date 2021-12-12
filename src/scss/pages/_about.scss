@@ -1,4 +1,12 @@
 .header-info {
+  hr {
+    display: none;
+  }
+
+  .big {
+    display: none;
+  }
+
   &__img {
     width: 100%;
     height: 240px;
@@ -74,5 +82,52 @@
   }
   .icon:first-child {
     margin-right: 26px;
+  }
+}
+
+@include tabletScreen {
+  .header-info {
+    position: relative;
+    hr {
+      display: block;
+    }
+
+    .big {
+      display: block;
+    }
+
+    &__img {
+      height: 720px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    &__text {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 27px);
+      padding-left: 27px;
+      padding-top: 80px;
+      margin-top: -45px;
+      background: $white;
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
