@@ -1,9 +1,7 @@
 import React from 'react';
-import HeaderInfo from '../components/HeaderInfo';
+import { HeaderInfo, Leaflet, Form } from '../components';
 import { contactHeaderData } from '../utils/data';
 import { BsArrowRight } from 'react-icons/bs';
-import Leaflet from '../components/Leaflet';
-import Form from '../components/Form';
 import { useGlobalContext } from '../context';
 
 const Contact = () => {

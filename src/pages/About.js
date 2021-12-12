@@ -1,6 +1,5 @@
 import React from 'react';
-import HeaderInfo from '../components/HeaderInfo';
-import LeadersInfo from '../components/LeadersInfo';
+import { HeaderInfo, LeadersInfo } from '../components';
 import { aboutHeaderData } from '../utils/data';
 
 const About = () => {
