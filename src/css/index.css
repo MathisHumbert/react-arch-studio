@@ -319,6 +319,13 @@ hr {
   z-index: -2;
 }
 
+@media screen and (min-width: 768px) {
+  .main-portfolio {
+    width: calc(100% - 195px);
+    padding-top: 0;
+  }
+}
+
 .header-info__img {
   width: 100%;
   height: 240px;

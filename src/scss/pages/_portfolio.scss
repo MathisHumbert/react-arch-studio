@@ -55,3 +55,11 @@
     }
   }
 }
+
+@include tabletScreen {
+  .main-portfolio {
+    width: calc(100% - 195px);
+
+    padding-top: 0;
+  }
+}
