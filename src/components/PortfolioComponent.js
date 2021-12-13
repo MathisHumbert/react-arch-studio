@@ -18,6 +18,11 @@ const PortfolioComponent = ({ data }) => {
               alt="portfolio-image"
               className="tablet-img"
             />
+            <img
+              src={img.desktop}
+              alt="portfolio-image"
+              className="desktop-img"
+            />
             <h3>{title}</h3>
             {date && <p>{date}</p>}
             {link && <Link to="/portfolio">view all projects</Link>}

@@ -70,3 +70,32 @@
     }
   }
 }
+
+@include desktopScreen {
+  .footer {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 200px;
+    position: relative;
+    background: transparent;
+
+    &__container {
+      height: 100%;
+      gap: 4rem;
+      width: calc(100% - 126px);
+      margin-left: 0;
+      background: $very-light-grey;
+    }
+
+    &__logo {
+      width: 200px;
+      height: 200px;
+    }
+
+    .button {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

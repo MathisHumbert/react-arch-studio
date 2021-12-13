@@ -1,8 +1,11 @@
 import React from 'react';
 import { HeaderInfo, LeadersInfo } from '../components';
 import { aboutHeaderData } from '../utils/data';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
+  const location = useLocation();
+
   return (
     <main className="main-about">
       <HeaderInfo {...aboutHeaderData} />

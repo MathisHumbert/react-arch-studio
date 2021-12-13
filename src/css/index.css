@@ -319,6 +319,7 @@ hr {
   gap: 10px;
   padding: 27px;
   color: #fff;
+  cursor: pointer;
 }
 
 .portfolio-container__article :after {
@@ -331,6 +332,12 @@ hr {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.25)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0.01%, rgba(0, 0, 0, 0.25) 100%);
   z-index: -1;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+.portfolio-container__article:hover :after {
+  background: rgba(255, 255, 255, 0.503415);
 }
 
 .portfolio-container__article h3 {
@@ -357,6 +364,21 @@ hr {
   .main-portfolio {
     width: calc(100% - 195px);
     padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-portfolio {
+    width: calc(100% - 300px);
+  }
+  .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio-container__article {
+    height: 560px;
   }
 }
 
@@ -773,11 +795,40 @@ hr {
   }
   .nav__link {
     list-style-type: none;
+    position: relative;
+  }
+  .nav__link.active .nav__border {
+    display: block;
+  }
+  .nav__link.active a {
+    color: #1b1d23;
   }
   .nav__link a {
     font-size: 15px;
     color: #7d828f;
     font-weight: 700;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+  }
+  .nav__link a:hover {
+    color: #1b1d23;
+  }
+  .nav__border {
+    display: none;
+    width: 24px;
+    height: 1px;
+    background: #1b1d23;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    width: calc(100% - 300px);
   }
 }
 
@@ -877,6 +928,32 @@ hr {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 3rem;
+  }
+  .footer .button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 200px;
+    position: relative;
+    background: transparent;
+  }
+  .footer__container {
+    height: 100%;
+    gap: 4rem;
+    width: calc(100% - 126px);
+    margin-left: 0;
+    background: #eeeff4;
+  }
+  .footer__logo {
+    width: 200px;
+    height: 200px;
   }
   .footer .button {
     position: absolute;
