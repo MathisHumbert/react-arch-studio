@@ -88,45 +88,59 @@
 @include tabletScreen {
   .header-info {
     position: relative;
+    width: calc(100% - 195px);
+    margin: 0 auto;
+
     hr {
       display: block;
+      margin-top: 67px;
     }
 
     .big {
       display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-50%);
     }
 
     &__img {
       height: 720px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
 
     &__img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       background: rgba(0, 0, 0, 0.35);
     }
 
     &__text {
-      display: none;
       position: absolute;
       bottom: 0;
-      width: calc(100% - 27px);
-      padding-left: 27px;
-      padding-top: 80px;
-      margin-top: -45px;
+      right: 0;
+      width: calc(100% - 10%);
+      max-width: 720px;
+      padding-left: 40px;
+      padding-top: 20px;
+      margin-top: 0;
+
       background: $white;
+
       h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .leaders-section {
+    width: calc(100% - 195px);
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 1rem;
+
+      img {
+        width: 100%;
+        margin-bottom: 10px;
       }
     }
   }

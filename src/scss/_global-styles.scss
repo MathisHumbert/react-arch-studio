@@ -127,6 +127,11 @@ hr {
     line-height: 56px;
     letter-spacing: -2px;
   }
+
+  .hr-section {
+    width: calc(100% - 195px);
+    margin: 200px auto;
+  }
 }
 
 // @include desktopScreen {
