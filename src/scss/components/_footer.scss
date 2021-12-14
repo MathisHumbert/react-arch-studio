@@ -35,6 +35,11 @@
       color: $medium-grey;
       font-weight: 700;
       text-align: center;
+      transition: color 0.4s ease-in-out;
+
+      &:hover {
+        color: $very-dark-blue;
+      }
     }
   }
 }
@@ -79,6 +84,7 @@
     height: 200px;
     position: relative;
     background: transparent;
+    max-width: 1140px;
 
     &__container {
       height: 100%;

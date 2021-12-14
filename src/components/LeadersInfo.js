@@ -17,7 +17,7 @@ const LeadersInfo = () => {
               <img src={img} alt={name} />
               <h3>{name}</h3>
               <p>{job}</p>
-              <div className="leader-section__icons">
+              <div className="leaders-section__icons">
                 <BsLinkedin className="icon" />
                 <BsTwitter className="icon" />
               </div>

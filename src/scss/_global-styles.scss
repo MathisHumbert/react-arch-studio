@@ -57,9 +57,14 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+  transition: background 0.4s ease-in-out;
 
   &__arrow {
     font-size: 24px;
+  }
+
+  &:hover {
+    background: $dark-grey;
   }
 }
 
@@ -81,7 +86,7 @@ hr {
 .tablet-img {
   display: none;
 }
-.desktoo-img {
+.desktop-img {
   display: none;
 }
 
@@ -104,7 +109,7 @@ hr {
   .tablet-img {
     display: block;
   }
-  .desktoo-img {
+  .desktop-img {
     display: none;
   }
 
@@ -134,14 +139,24 @@ hr {
   }
 }
 
-// @include desktopScreen {
-//   .mobile-img {
-//     display: none;
-//   }
-//   .tablet-img {
-//     display: none;
-//   }
-//   .desktoo-img {
-//     display: block;
-//   }
-// }
+@include desktopScreen {
+  .mobile-img {
+    display: none;
+  }
+  .tablet-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+  }
+
+  .big {
+    font-size: 200px;
+    letter-spacing: 5px;
+  }
+
+  .hr-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+  }
+}

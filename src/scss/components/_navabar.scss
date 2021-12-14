@@ -87,5 +87,6 @@
 @include desktopScreen {
   .nav {
     width: calc(100% - 300px);
+    max-width: 1140px;
   }
 }

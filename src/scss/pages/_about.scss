@@ -52,6 +52,10 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  &__img {
+    display: none;
+  }
 }
 
 .leaders-section {
@@ -79,6 +83,13 @@
 
   .icon {
     font-size: 32px;
+    color: $very-dark-blue;
+    transition: color 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark-grey;
+    }
   }
   .icon:first-child {
     margin-right: 26px;
@@ -121,12 +132,17 @@
       padding-left: 40px;
       padding-top: 20px;
       margin-top: 0;
-
       background: $white;
 
       h2 {
         margin-bottom: 2rem;
       }
+    }
+  }
+
+  .about-section {
+    br {
+      display: block;
     }
   }
 
@@ -141,6 +157,78 @@
       img {
         width: 100%;
         margin-bottom: 10px;
+      }
+    }
+
+    h2 {
+      max-width: 120px;
+    }
+  }
+}
+
+@include desktopScreen {
+  .header-info {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    max-width: 1140px;
+
+    hr {
+      margin-bottom: 4rem;
+    }
+
+    .big {
+      right: 0;
+    }
+
+    &__img {
+      width: 635px;
+    }
+
+    &__text {
+      right: 0;
+      width: 100%;
+      height: 503px;
+      max-width: 700px;
+      padding-left: 0;
+      padding-top: 0;
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      h2 {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__text-container {
+      max-width: 446px;
+    }
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 133px;
+
+    &__info {
+      align-self: flex-end;
+    }
+    &__img {
+      display: block;
+    }
+  }
+
+  .leaders-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 133px;
+
+    &__container {
+      img {
+        position: relative;
       }
     }
   }
