@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderImage = () => {
   return (
-    <section className="img-section">
+    <section className="img-section header-images">
       <div className="img-section__container">
         <img src={mobileImages.paramour} className="mobile-img" />
         <img src={tabletImages.paramour} className="tablet-img" />

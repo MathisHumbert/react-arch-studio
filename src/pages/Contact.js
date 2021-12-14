@@ -11,31 +11,33 @@ const Contact = () => {
       <HeaderInfo {...contactHeaderData} />
       <section className="contact-section hr-section">
         <hr />
-        <h2>
-          Contact <br /> Details
-        </h2>
-        <article className="contact-section__office">
-          <p>Main Office</p>
-          <div className="contact-section__text">
-            <p>Mail : archone@mail.com</p>
-            <p>Address : Atlanta</p>
-            <p>Phone : 123-456-3451</p>
-          </div>
-          <span onClick={setAtlanta}>
-            View on Map <BsArrowRight className="map-icon" />
-          </span>
-        </article>
-        <article className="contact-section__office">
-          <p>Office II</p>
-          <div className="contact-section__text">
-            <p>Mail : archtwo@mail.com</p>
-            <p>Address : Dallas</p>
-            <p>Phone : 832-123-4321</p>
-          </div>
-          <span onClick={setDallas}>
-            View on Map <BsArrowRight className="map-icon" />
-          </span>
-        </article>
+        <div className="contact-section__container">
+          <h2>
+            Contact <br /> Details
+          </h2>
+          <article className="contact-section__office">
+            <p>Main Office</p>
+            <div className="contact-section__text">
+              <p>Mail : archone@mail.com</p>
+              <p>Address : Atlanta</p>
+              <p>Phone : 123-456-3451</p>
+            </div>
+            <span onClick={setAtlanta}>
+              View on Map <BsArrowRight className="map-icon" />
+            </span>
+          </article>
+          <article className="contact-section__office">
+            <p>Office II</p>
+            <div className="contact-section__text">
+              <p>Mail : archtwo@mail.com</p>
+              <p>Address : Dallas</p>
+              <p>Phone : 832-123-4321</p>
+            </div>
+            <span onClick={setDallas}>
+              View on Map <BsArrowRight className="map-icon" />
+            </span>
+          </article>
+        </div>
       </section>
       <Leaflet />
       <Form />

@@ -162,3 +162,37 @@
     height: 560px;
   }
 }
+
+@include desktopScreen {
+  .contact-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    margin-bottom: 72px;
+    &__container {
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__office {
+      position: relative;
+      width: 100%;
+
+      span {
+        position: inherit;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  .leaflet-container {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+  }
+
+  .form {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+  }
+}

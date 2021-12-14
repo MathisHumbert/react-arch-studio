@@ -25,6 +25,10 @@
     color: $white;
   }
 
+  h2 {
+    color: $white;
+  }
+
   p {
     color: $white;
   }
@@ -69,6 +73,10 @@
     width: 100%;
     justify-content: center;
   }
+
+  &__img {
+    display: none;
+  }
 }
 
 // Featured
@@ -84,6 +92,20 @@
   a {
     display: none;
   }
+
+  .portfolio-container {
+    &__article {
+      cursor: inherit;
+
+      &:hover :after {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.1) 0.01%,
+          rgba(0, 0, 0, 0.25) 100%
+        );
+      }
+    }
+  }
 }
 
 @include tabletScreen {
@@ -93,6 +115,10 @@
     height: 720px;
     margin: 0 auto;
     padding: 58px;
+
+    h2 {
+      max-width: 400px;
+    }
   }
 
   .middle-image {
@@ -144,5 +170,48 @@
     a {
       display: flex;
     }
+  }
+}
+
+@include desktopScreen {
+  .header-images {
+    display: none;
+  }
+
+  .section-center {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: flex-end;
+    align-items: flex-end;
+
+    &__text {
+      padding-top: 200px;
+      padding-left: 130px;
+      position: relative;
+      .big {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &__img {
+      display: block;
+    }
+  }
+
+  .img-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    height: 560px;
+    padding: 58px;
+  }
+
+  .featured-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
   }
 }

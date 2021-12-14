@@ -187,6 +187,10 @@ hr {
   color: #fff;
 }
 
+.img-section h2 {
+  color: #fff;
+}
+
 .img-section p {
   color: #fff;
 }
@@ -239,6 +243,10 @@ hr {
           justify-content: center;
 }
 
+.section-center__img {
+  display: none;
+}
+
 .featured-section {
   width: calc(100% - 57px);
   margin: 0 auto;
@@ -253,12 +261,24 @@ hr {
   display: none;
 }
 
+.featured-section .portfolio-container__article {
+  cursor: inherit;
+}
+
+.featured-section .portfolio-container__article:hover :after {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.25)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0.01%, rgba(0, 0, 0, 0.25) 100%);
+}
+
 @media screen and (min-width: 768px) {
   .img-section {
     width: calc(100% - 195px);
     height: 720px;
     margin: 0 auto;
     padding: 58px;
+  }
+  .img-section h2 {
+    max-width: 400px;
   }
   .middle-image {
     margin: 98px auto;
@@ -308,6 +328,48 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-images {
+    display: none;
+  }
+  .section-center {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section-center__text {
+    padding-top: 200px;
+    padding-left: 130px;
+    position: relative;
+  }
+  .section-center__text .big {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .section-center__img {
+    display: block;
+  }
+  .img-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    height: 560px;
+    padding: 58px;
+  }
+  .featured-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
   }
 }
 
@@ -849,6 +911,37 @@ hr {
     width: calc(100% - 195px);
     margin: 0 auto;
     height: 560px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-section {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+    margin-bottom: 72px;
+  }
+  .contact-section__container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact-section__office {
+    position: relative;
+    width: 100%;
+  }
+  .contact-section__office span {
+    position: inherit;
+    margin-top: 4rem;
+  }
+  .leaflet-container {
+    width: calc(100% - 300px);
+    max-width: 1140px;
+  }
+  .form {
+    width: calc(100% - 300px);
+    max-width: 1140px;
   }
 }
 
