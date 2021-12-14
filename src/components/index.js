@@ -10,6 +10,7 @@ import Navbar from './Navbar';
 import PortfolioComponent from './PortfolioComponent';
 import Sidebar from './Sidebar';
 import WelcomeHome from './WelcomeHome';
+import SliderImg from './SliderImg';
 
 export {
   Featured,
@@ -24,4 +25,5 @@ export {
   PortfolioComponent,
   Sidebar,
   WelcomeHome,
+  SliderImg,
 };

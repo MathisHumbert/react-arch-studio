@@ -4,6 +4,7 @@ import tabletPortfolioImages from '../assets/portfolio/tablet';
 import desktopPortfolioImages from '../assets/portfolio/desktop';
 import aboutImages from '../assets/about';
 import contactImages from '../assets/contact';
+import desktopImages from '../assets/home/desktop';
 
 export const portfolioData = [
   {
@@ -190,3 +191,30 @@ export const contactHeaderData = {
   title: 'Tell us about your project',
   text: 'We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!',
 };
+
+export const sliderData = [
+  {
+    id: 0,
+    title: 'Project Paramour',
+    text: 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.',
+    img: desktopImages.paramour,
+  },
+  {
+    id: 1,
+    title: 'Seraph Station',
+    text: 'The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.',
+    img: desktopImages.seraph,
+  },
+  {
+    id: 2,
+    title: 'Federal II Tower',
+    text: 'A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.',
+    img: desktopImages.federal,
+  },
+  {
+    id: 3,
+    title: 'Trinity Bank Tower',
+    text: 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.',
+    img: desktopImages.trinity,
+  },
+];
