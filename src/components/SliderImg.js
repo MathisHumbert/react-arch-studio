@@ -39,7 +39,7 @@ const SliderImg = () => {
 
         return (
           <article className={position} key={id}>
-            <img src={img} alt="slider-image" />
+            <img src={img} alt="slider-img" />
             <div className="slider-img__content">
               <h1>{title}</h1>
               <p>{text}</p>

@@ -8,8 +8,16 @@ const HeaderImage = () => {
   return (
     <section className="img-section header-images">
       <div className="img-section__container">
-        <img src={mobileImages.paramour} className="mobile-img" />
-        <img src={tabletImages.paramour} className="tablet-img" />
+        <img
+          src={mobileImages.paramour}
+          className="mobile-img"
+          alt="header-img"
+        />
+        <img
+          src={tabletImages.paramour}
+          className="tablet-img"
+          alt="header-img"
+        />
         <h1>Project Paramour</h1>
         <p>
           Project made for an art museum near Southwest London. Project Paramour

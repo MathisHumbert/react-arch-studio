@@ -8,19 +8,11 @@ const PortfolioComponent = ({ data }) => {
         const { img, title, date, link } = item;
         return (
           <article className="portfolio-container__article" key={index}>
-            <img
-              src={img.mobile}
-              alt="portfolio-image"
-              className="mobile-img"
-            />
-            <img
-              src={img.tablet}
-              alt="portfolio-image"
-              className="tablet-img"
-            />
+            <img src={img.mobile} alt="portfolio-img" className="mobile-img" />
+            <img src={img.tablet} alt="portfolio-img" className="tablet-img" />
             <img
               src={img.desktop}
-              alt="portfolio-image"
+              alt="portfolio-img"
               className="desktop-img"
             />
             <h3>{title}</h3>

@@ -1,4 +1,3 @@
-import React from 'react';
 import mobilePortfolioImages from '../assets/portfolio/mobile';
 import tabletPortfolioImages from '../assets/portfolio/tablet';
 import desktopPortfolioImages from '../assets/portfolio/desktop';

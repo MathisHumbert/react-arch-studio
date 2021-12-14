@@ -11,17 +11,24 @@ const Leaflet = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  });
+  }, []);
 
-  useEffect(() => {
-    if (loading) return;
-    map.setZoom(zoom);
-  }, [zoom]);
+  useEffect(
+    () => {
+      if (loading) return;
+      map.setZoom(zoom);
+    }, // eslint-disable-next-line
+    [zoom]
+  );
 
-  useEffect(() => {
-    if (loading) return;
-    map.flyTo(position);
-  }, [position]);
+  useEffect(
+    () => {
+      if (loading) return;
+      map.flyTo(position);
+    },
+    // eslint-disable-next-line
+    [position]
+  );
 
   const atlanta = [33.75, -84.38];
   const dallas = [32.78, -96.8];
