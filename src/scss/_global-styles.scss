@@ -90,6 +90,10 @@ hr {
   display: none;
 }
 
+.page-name {
+  display: none;
+}
+
 @mixin tabletScreen {
   @media screen and (min-width: 768px) {
     @content;
@@ -137,6 +141,39 @@ hr {
     width: calc(100% - 195px);
     margin: 200px auto;
   }
+
+  .page-name {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    hr {
+      border: none;
+      border-left: 1px solid $light-grey;
+      height: 104px;
+      width: 1px;
+    }
+
+    p {
+      display: block;
+      position: absolute;
+      top: 300px;
+      width: 300px;
+      transform: rotate(90deg);
+      color: $light-grey;
+      font-size: 15px;
+      letter-spacing: 15px;
+      text-transform: uppercase;
+      height: fit-content;
+    }
+  }
 }
 
 @include desktopScreen {
@@ -158,5 +195,9 @@ hr {
   .hr-section {
     width: calc(100% - 300px);
     max-width: 1140px;
+  }
+
+  .page-name {
+    left: 7%;
   }
 }

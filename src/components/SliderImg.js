@@ -9,7 +9,7 @@ const SliderImg = () => {
   React.useEffect(() => {
     let slider = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 5000);
     return () => clearInterval(slider);
   }, [index]);
 

@@ -11,6 +11,7 @@ import PortfolioComponent from './PortfolioComponent';
 import Sidebar from './Sidebar';
 import WelcomeHome from './WelcomeHome';
 import SliderImg from './SliderImg';
+import PageName from './PageName';
 
 export {
   Featured,
@@ -26,4 +27,5 @@ export {
   Sidebar,
   WelcomeHome,
   SliderImg,
+  PageName,
 };

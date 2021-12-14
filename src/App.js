@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { About, Contact, Home, Portfolio } from './pages';
-import { Footer, Navbar, Sidebar } from './components';
+import { Footer, Navbar, Sidebar, PageName } from './components';
 
 const App = () => {
   return (
     <Router>
+      <PageName />
       <Navbar />
       <Sidebar />
       <Routes>
